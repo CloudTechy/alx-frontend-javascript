@@ -1,8 +1,10 @@
-import Currency from "./3-currency";
+import Currency from './3-currency';
 
 export default class Pricing {
   constructor(amount, currency) {
+    // eslint-disable-next-line no-underscore-dangle
     this._amount = amount;
+    // eslint-disable-next-line no-underscore-dangle
     this._currency = currency;
   }
 
@@ -12,8 +14,8 @@ export default class Pricing {
   }
 
   set amount(value) {
-    if (typeof value !== "number") {
-      throw new Error("TypeError: Amount must be a number");
+    if (typeof value !== 'number') {
+      throw new Error('TypeError: Amount must be a number');
     }
     // eslint-disable-next-line no-underscore-dangle
     this._amount = value;
@@ -37,7 +39,7 @@ export default class Pricing {
       // eslint-disable-next-line no-underscore-dangle
       this._currency.code,
       // eslint-disable-next-line no-underscore-dangle
-      this._currency.name
+      this._currency.name,
     ).displayFullCurrency()}`;
   }
 
