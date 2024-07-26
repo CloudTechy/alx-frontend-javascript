@@ -10,6 +10,7 @@ export default class Pricing {
 
   // Getter and Setter for amount
   get amount() {
+    // eslint-disable-next-line no-underscore-dangle
     return this._amount;
   }
 

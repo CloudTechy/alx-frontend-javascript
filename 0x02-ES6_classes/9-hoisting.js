@@ -1,5 +1,5 @@
-import { HolbertonClass } from './HolbertonClass';
-import { StudentHolberton } from './StudentHolberton';
+import HolbertonClass from './HolbertonClass';
+import StudentHolberton from './StudentHolberton';
 
 const class2019 = new HolbertonClass(2019, 'San Francisco');
 const class2020 = new HolbertonClass(2020, 'San Francisco');
