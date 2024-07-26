@@ -1,6 +1,4 @@
-import { HolbertonClass } from './HolbertonClass';
-
-export class StudentHolberton {
+export default class StudentHolberton {
   constructor(firstName, lastName, holbertonClass) {
     this.firstName = firstName;
     this.lastName = lastName;
