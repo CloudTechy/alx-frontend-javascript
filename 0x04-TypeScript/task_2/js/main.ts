@@ -76,12 +76,10 @@ function executeWork( employee: Director | Teacher): string {
 console.log(executeWork(createEmployee(200)));
 console.log(executeWork(createEmployee(1000)));
 
-const Subjects: string[] = ['Math', 'English', 'History', 'Science'];
+type Subjects = 'Math' | 'History';
 
-function teachClass(todayClass: string): string {
-    if (Subjects.includes(todayClass)) {
-        return `Teaching ${todayClass}`;
-    }
+function teachClass(todayClass: Subjects): string {
+    return `Teaching ${todayClass}`;
 }
 console.log(teachClass('Math'));
 console.log(teachClass('History'));
